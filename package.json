@@ -1,0 +1,20 @@
+{
+  "name": "react-api-helper",
+  "version": "0.1.0",
+  "description": "This simple api calling library for react js. It will work as a API Helper.",
+  "main": "api-helper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reactjs",
+    "api"
+  ],
+  "author": "Ashraful Islam <ashraf@iashraful.me> (https://iashraful.me)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
