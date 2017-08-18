@@ -1,14 +1,15 @@
 {
   "name": "react-api-helper",
   "version": "0.1.0",
-  "description": "This simple api calling library for react js. It will work as a API Helper.",
+  "description": "This simple api calling library for react js. It will work as a helper for API functionality.",
   "main": "api-helper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "reactjs",
-    "api"
+    "react",
+    "api",
+    "rest api"
   ],
   "author": "Ashraful Islam <ashraf@iashraful.me> (https://iashraful.me)",
   "license": "MIT",
