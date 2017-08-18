@@ -21,9 +21,12 @@ class APIHelper extends React.Component {
          * fetch returns promise. This library helps to get json from promise.
          */
         let bodyData = undefined;
-        let meta = {
-            headers: this.props.headers,
-        };
+        // Declaring empty object
+        let meta = {};
+
+        if(this.props.headers) {
+            meta.headers = this.props.headers;
+        }
         if (this.props.method) {
             meta.method = this.props.method;
             // Simply no reason for body when it is GET method.
