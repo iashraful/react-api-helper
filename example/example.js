@@ -1,28 +1,25 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import APIHelper from '../api-helper';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-export default class App extends React.Component {
+import APIHelper from './api-helper';
 
-    onError(error) {
-        console.log(error)
+class Example extends Component {
+    getData(data) {
+        console.log("Data");
+        console.log(data);
     }
 
     render() {
-        return (
-            <APIHelper/>
-        )
-    }
-
-}
-
-class TestComponent extends React.Component {
-    render() {
+    	const url = "https://api.github.com/";
 
         return (
-            <h1>Hello....</h1>
-        )
+            <APIHelper
+                apiUrl={url}
+                method="GET"
+                apiData={this.getData.bind(this)}
+            />
+        );
     }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+ReactDOM.render(<Example />, document.getElementById('root'));
